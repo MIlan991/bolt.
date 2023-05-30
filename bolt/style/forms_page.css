@@ -1,0 +1,273 @@
+html {
+    scroll-behavior: smooth;
+}
+.sign-up,
+.log-in{
+    background-color: rgb(255, 207, 155, 0.1);
+    margin: 0 auto;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sign-up-content,
+.log-in-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 84px 170px 162px 156px;
+    width: 100%;
+    overflow-x: hidden;
+}
+.sign-up-image,
+.log-in-image{
+    width: 50%;
+    text-align: end;
+}
+.sign-up-text,
+.log-in-text{
+    width: 50%;
+}
+.sign-up-text h1,
+.log-in-text h1{
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 53px;
+    color: #FF7800;
+    margin-bottom: 16px;
+}
+.sign-up-text p,
+.log-in-text p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #666666;
+    margin-bottom: 32px;
+}
+.sign-up-text form,
+.log-in-text form{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+}
+.sign-up-text form input,
+.log-in-text form input{
+    max-width: 548px;
+    height: 51px;
+    width: 100%;
+    background: #FAFAFA;
+    border: 1px solid #999898;
+    border-radius: 15px;
+    margin-bottom: 24px;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #2D2D2D;
+    padding-left: 17px;
+    box-sizing: border-box;
+}
+.sign-up-text form input:focus,
+.log-in-text form input:focus{
+    background-color: rgb(255, 120, 0, 0.1);
+    outline: none;
+    border: 1px solid rgb(255, 207, 155, 0.1);
+}
+.check-div{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+}
+.check-div{
+    max-width: 25px;
+}
+.check-div input{
+    position: absolute;
+    opacity: 0;
+}
+.check-terms-div{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.check-terms-div p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #666666;
+    max-width: 438px;
+    margin-left: 6px;
+}
+.remember-me-on,
+.agree-check-on{
+    display: none;
+    cursor: pointer;
+}
+.btn{
+    width: 233px;
+    height: 55px;
+    background: #FFA039;
+    box-shadow: inset -2px -2px 10px #FF7800;
+    border-radius: 15px;
+    border: 2px solid #FFA039;
+    cursor: pointer;
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FAFAFA;
+}
+.btn:hover{
+    background-color: #FF7800;
+    transition: .3s;
+}
+
+.check-login,
+.password-check{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 370px;
+}
+.check-login p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #666666;
+    margin-bottom: 0px;
+    margin-right: 6px;
+}
+.check-login a,
+.password-check a{
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration-line: underline;
+    color: #FFA039;
+}
+.password-check{
+    margin-bottom: 33px;
+}
+.password-check a{
+    font-size: 14px;
+}
+.check-login a:hover,
+.password-check a:hover{
+    color: #FF7800;
+    transition: .3s;
+}
+.password-check a:nth-child(1){
+    margin-right: 8px;
+}
+.password-check a:nth-child(2){
+    margin-left: 8px;
+}
+.check-login li,
+.password-check li{
+    list-style-type: none;
+}
+
+
+@media only screen and (max-width: 1200px){
+    .sign-up-content,
+    .log-in-content{
+        padding: 84px 70px 162px 106px;
+    }
+}
+@media only screen and (max-width: 1035px){
+    .sign-up-text h1,
+    .log-in-text h1{
+        font-size: 34px;
+        line-height: 42px;
+        margin-bottom: 7px;
+    }
+    .sign-up-text p,
+    .log-in-text p,
+    .sign-up-text a,
+    .log-in-text a{
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 24px;
+    }
+    .check-login,
+    .password-check{
+        align-items: flex-start;
+        justify-content: flex-start;
+        max-width: 100%;
+    }
+    .check-login p,
+    .password-check p{
+        margin-bottom: 0px;
+    }
+}
+
+@media only screen and (max-width: 895px){
+    .sign-up-content,
+    .log-in-content{
+        width: 100%;
+        max-width: 100%;
+        padding: 54px 21px 158px 21px;
+    }
+    .sign-up-image,
+    .log-in-image{
+        display: none;
+    }
+    .sign-up-text,
+    .log-in-text{
+        width: 100%;
+    }
+    .sign-up-text form,
+    .log-in-text form{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 32px;
+    }
+    .sign-up-text form input,
+    .log-in-text form input{
+        max-width: 100%;
+    }
+    .sign-up-text p,
+    .log-in-text p{
+        max-width: 285px;
+    }
+    .check-login,
+    .password-check{
+        justify-content: flex-start;
+    }
+    .check-login p,
+    .password-check p{
+        margin-right: 16px;
+    }
+}
+
+@media only screen and (max-width: 895px){
+    .sign-up-content,
+    .log-in-content{
+        padding: 84px 9px 162px 9px;
+    }
+}
+
+@media only screen and (max-width: 302px){
+    .check-login{
+        flex-direction: column;
+    }
+    .check-login p{
+        margin-bottom: 8px;
+    }
+}
